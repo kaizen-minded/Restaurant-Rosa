@@ -389,11 +389,12 @@ footer {
   border-radius: 50%;
 }
 
-.back-to-topi {
+.back-to-top i {
   display: block;
   color: #fff;
   font-size: 2rem;
   padding: 2rem;
+  animation-delay: up 2s infinite;
 }
 
 .footer-content {
@@ -628,5 +629,18 @@ footer {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes up {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-1rem);
   }
 }
